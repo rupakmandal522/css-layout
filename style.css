@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root{
+	--header-color:#60A5FA;
+	--item-background: #6EE7B7;
+	--item-border:#047857;
+	--hero-background: #F87171;
+	--hero-border: #991B1B ;
+	
+}
+* {
+	box-sizing: border-box;
+  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =============================General class========================== */
+.body{
+	font-family: 'Poppins', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+	 flex-wrap: wrap; 
+	
+}
+.container{
+	max-width: 1080px;
+	margin: 0 auto;
+	
+}
+
+.box{
+	background-color: var(--item-background);
+	height: 80px ; 
+	width: 80px ; 
+	border: 5px solid var(--item-border);
+	margin: 2px auto;
+	/* padding: 5px 0 ;  */
+	text-align: center ;
+	line-height: 80px ;
+	border-radius: 5px ; 
+}
+.hero-1{
+	background-color: var(--hero-background);
+	border-color: var(--hero-border);
+}
+.padding {
+	padding : 60px;
+}
+.clearfix::before,.clearfix::after{
+	content: "";
+	display: table;
+}
+.clearfix::after{
+	clear: both; 
+}
+
+.item{
+	background-color: var(--item-background) ;
+	width: 140px ;
+	height: 140px ;
+	border: 5px solid var(--item-border);
+	text-align: center;
+	line-height: 150px;
+	border-radius: 5px;
+}
+.flex-item {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 100px 0 ;
+	border-bottom: 2px solid #DB2777; 
+}
+
+ /* ===============================header =======================================*/
+ .header{
+	background-color:var(--header-color) ;
+	padding: 40px 50px; 
+	color: white;
+ }
+ h1{
+	font-size: 40px;
+	font-family:  'Poppins', sans-serif;
+	font-family: bold;
+} 
+h1 a{
+	color: white ;
+}
+ .header .flex .nav-links a{
+	font-size: 35px ; 
+	margin-left: 20px;
+	
+}
+.menu{
+	color: rgb(240, 29, 75)
+}
+.menubar{
+	border-bottom: 2px solid #d81159;
+    padding-bottom: 3px;
+    color: white;
+} 
+
+.button .btn{
+	background-color: white;
+	padding: 8px 20px ;
+	margin-left: 10px;
+	font-size: 14px ;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none ;	
+}  
+ /* =======================/ float section/==========================================  */
+ .float-section{
+	 background-color: #DBEAFE;
+	 padding: 60px;
+ }
+
+h2{
+	 text-align: center;
+	 font-size: 27px; 
+     margin-top: 35px;
+	 font-family: 'Poppins', sans-serif;
+	 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	 margin-bottom: 40px ;
+ }
+ 
+ .position-box{
+	 border: 2.5px solid #DB2777;
+	 width: 350px ;
+	 text-align: center;	 
+ }
+
+.box2 .hero-1{
+	float: left ;
+}
+
+.box3 .hero-1{
+	float: right ;
+}
+
+/* Uniquely position Element */
+.unique-positioning{
+	background-color: #BFDBFE;
+	padding: 60px ;
+	
+}
+.container-2 {
+	justify-content: space-around;
+	row-gap: 20px;
+}
+
+.box6 #unique-hero {
+	position: relative;
+	top: 30px;
+	left: 40px ;
+}
+.box7 {
+	position: relative;
+}
+.box7 #hero-unique {
+	position: absolute;
+	top: 50; 
+	left: 60px;
+	
+}
+.unique-positioning .scroll-para {
+	overflow: auto;
+	height: 300px ;
+	width: 350px;
+	overflow-x: hidden;	
+}
+.unique-positioning #hero-scroll {
+	position: sticky;
+	top: 10px ;	
+}
+.unique-positioning p {
+	font-size: 20px;
+	text-align: justify;
+}
+
+/* ===============  Positioing With a Flex =============*/
+.Positioning-flex {
+	background-color: #EFF6FF;
+	color: black ;
+	padding: 50px 0  ;
+}
+.box-item {
+	flex-direction: column ;
+	align-items: center;
+	row-gap: 3px ;
+	padding: 50px 0;			
+}
+.multiple-item {
+	row-gap: 3px  ;
+	column-gap: 3px;
+	justify-content: center;			
+}	
+.column-items {
+	column-gap: 10px ;	
+} 
+.Positioning-flex #item3 {
+	flex-grow: 1;
+	flex-shrink: 2;
+}
+.justify-content {
+	display :flex ;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 50px ;
+	padding : 100px  0 ;
+}
+
+/* Top----------- to -----------bottom  */
+
+.top-nav a {
+	background-color: white;
+	line-height: 40px;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d81159;
+    position: fixed;
+    right: -40px;
+    bottom: 110px ; 
+}
+.top-nav i {
+       font-size: 15px; 
+	    padding-left: 20px; 
+		text-align: center;
+}
+
+
+/* =============#=footer--section==#======================== */
+.footer {
+	background-color: var(--header-color);
+	padding :40px 50px ;	
+}
+.nav-flex {
+	display: flex;
+	justify-content: center;
+	column-gap: 40px ;	
+}
+
+i {
+    font-size: 30px ;
+	color: white;
+	justify-content: space-around;	
+}
